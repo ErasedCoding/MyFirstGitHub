@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess</title>
+</head>
+<body>
+    <script>
+        alert('guess our number beetwen 1 and 20');
+        let cheacker=0;
+        let answer;
+       const rndInt = Math.floor(Math.random() * 20) + 1
+       console.log(rndInt)
+       while(cheacker<=3){
+        answer=prompt('enter your answer');
+        cheacker+=1
+         if(answer==rndInt){
+            alert('you won');
+            break
+         }
+         else{
+            if(cheacker==1){
+            alert('incorect answer 2 more chance')
+            }
+            else if(cheacker==2){
+                alert('incorect answer 1 more chance')
+            }
+            else if(cheacker==3){
+                alert('incorect answer no more chance')
+            }
+         }
+
+       }
+       alert('GameEnded')
+    </script>
+</body>
+</html>
